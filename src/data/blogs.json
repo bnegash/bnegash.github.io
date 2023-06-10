@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "What I Learned as a First-Time Tech Lead",
+    "url": "https://levelup.gitconnected.com/what-i-learned-as-a-first-time-tech-lead-ca2602a9fe08",
+    "date": "February 1st, 2023"
+  },
+  {
+    "id": 2,
+    "title": "How I Approached My Organization's Rebranding As a Software Engineer",
+    "url": "https://hackernoon.com/how-i-approached-my-organizations-rebranding-as-a-software-engineer",
+    "date": "March 15th, 2023"
+  },
+  {
+    "id": 3,
+    "title": "Building Beautiful New Features with ZERO Lines of CSS",
+    "url": "https://fulcrum.lever.co/building-beautiful-new-features-with-zero-lines-of-css-8a7b1a2550ef",
+    "date": "December 20th, 2018"
+  }
+]
