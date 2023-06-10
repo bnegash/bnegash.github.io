@@ -4,7 +4,6 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import particlesConfig from "../data/particles-config.json";
-import { Link } from "react-router-dom";
 
 function Contact() {
     const particlesInit = useCallback(async (engine) => {
