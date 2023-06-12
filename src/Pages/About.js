@@ -2,28 +2,9 @@ import React from "react";
 import profilePic from "../assets/images/profile-pic.jpg";
 import blogs from "../data/blogs.json";
 import "./About.css";
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import particlesConfig from "../data/particles-config.json";
 const About = () => {
-    const particlesInit = useCallback(async (engine) => {
-        console.log(engine);
-        await loadFull(engine);
-    }, []);
-
-    const particlesLoaded = useCallback(async (container) => {
-        await console.log(container);
-    }, []);
-
-
     return (
         <div className="container">
-            <Particles
-                id="tsparticles"
-                init={particlesInit}
-                loaded={particlesLoaded}
-                options={particlesConfig}/>
             <h1 className="about-title">About Me</h1>
             <div className="about-content">
                 <img src={profilePic} alt="Profile" className="about-profile" />

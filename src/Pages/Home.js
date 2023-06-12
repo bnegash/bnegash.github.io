@@ -1,40 +1,33 @@
 import React from "react";
 import "./Home.css";
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import particlesConfig from "../data/particles-config.json";
-import { Link } from "react-router-dom";
 
 function Home() {
-    const particlesInit = useCallback(async (engine) => {
-        console.log(engine);
-        await loadFull(engine);
-    }, []);
-
-    const particlesLoaded = useCallback(async (container) => {
-        await console.log(container);
-    }, []);
-
-    return(
-        <div className="home-container">
-            <h1>Hello!</h1>
-            <p>
-                Welcome to my personal portfolio website. Feel free to click around!
-            </p>
-            <div>
-                <Link to="/about">Learn more about me</Link>
-                <Link to="/portfolio">Check out some of my recent projects</Link>
-                <Link to="/contact">Get in touch</Link>
+    return (
+        <div className="macintosh" aria-label="1984 Macintosh illustration">
+            <div className="monitor">
+                <div className="monitor-inner">
+                    <div class="screen-cutout">
+                        <div className="screen"></div>
+                    </div>
+                    <div className="logo">
+                        <p>🏳️‍🌈</p>
+                    </div>
+                    <div className="opening">
+                        <div className="opening-inner">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <Particles
-                id="tsparticles"
-                init={particlesInit}
-                loaded={particlesLoaded}
-                options={particlesConfig}
-            />
+            <div class="foot">
+                <div class="inset"></div>
+                <div class="cable-container">
+                    <div class="cable-hole"></div>
+                </div>
+            </div>
         </div>
     );
 }
 
 export default Home;
+
+

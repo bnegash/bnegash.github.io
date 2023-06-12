@@ -1,19 +1,7 @@
 import React from "react";
 import "./Contact.css";
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import particlesConfig from "../data/particles-config.json";
 
 function Contact() {
-    const particlesInit = useCallback(async (engine) => {
-        console.log(engine);
-        await loadFull(engine);
-    }, []);
-
-    const particlesLoaded = useCallback(async (container) => {
-        await console.log(container);
-    }, []);
     const handleSubmit = (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
@@ -25,11 +13,6 @@ function Contact() {
 
     return (
         <div className="container">
-            <Particles
-                id="tsparticles"
-                init={particlesInit}
-                loaded={particlesLoaded}
-                options={particlesConfig}/>
             <h1 className="contact-title">Contact Me</h1>
             <p className="contact-subtitle">
                 I'm always happy to meet new people! Please feel free to get in touch
