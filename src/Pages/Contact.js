@@ -1,66 +1,102 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Contact.css";
 
 function Contact() {
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
-        const name = formData.get("name");
-        const email = formData.get("email");
-        const message = formData.get("message");
-        window.location.href = `mailto:bnegash16@outlook.com?subject=Contact%20Form&body=Name:%20${name}%0AEmail:%20${email}%0AMessage:%20${message}`;
-    };
+    useEffect(() => {
+        const handleSubmit = (e) => {
+            e.preventDefault();
+            e.target.elements.name.value = "";
+            e.target.elements.email.value = "";
+            e.target.elements.message.value = "";
+        };
+
+        const contactForm = document.querySelector("#contact-form");
+        if (contactForm) {
+            contactForm.addEventListener("submit", handleSubmit);
+        }
+
+        return () => {
+            // Clean up the event listener when the component is unmounted
+            if (contactForm) {
+                contactForm.removeEventListener("submit", handleSubmit);
+            }
+        };
+    }, []);
 
     return (
-        <div className="container">
-            <h1 className="contact-title">Contact Me</h1>
-            <p className="contact-subtitle">
-                I'm always happy to meet new people! Please feel free to get in touch
-                using the form below.
-            </p>
-            <form className="contact-form" onSubmit={handleSubmit}>
-                <div className="contact-group">
-                    <label htmlFor="name" className="contact-label">
-                        Name
-                    </label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        className="contact-input"
-                        required
-                    />
+        <section id="contact">
+
+            <h1 className="section-header">Contact</h1>
+
+            <div className="contact-wrapper">
+
+                <form id="contact-form" className="form-horizontal" role="form">
+
+                    <div className="form-group">
+                        <div className="col-sm-12">
+                            <input type="text" className="form-control" id="name" placeholder="NAME" name="name"
+                                   value="" required/>
+                        </div>
+                    </div>
+
+                    <div className="form-group">
+                        <div className="col-sm-12">
+                            <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email"
+                                   value="" required/>
+                        </div>
+                    </div>
+
+                    <textarea className="form-control" rows="10" placeholder="MESSAGE" name="message"
+                              required></textarea>
+
+                    <button className="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                        <div className="alt-send-button">
+                            <i className="fa fa-paper-plane"></i><span className="send-text">SEND</span>
+                        </div>
+
+                    </button>
+
+                </form>
+
+                <div className="direct-contact-container">
+
+                    <ul className="contact-list">
+                        <li className="list-item"><i className="fa fa-map-marker fa-2x"><span
+                            className="contact-text place">Corona, CA</span></i></li>
+
+                        <li className="list-item"><i className="fa fa-phone fa-2x"><span className="contact-text phone"><a
+                            href="tel:1-212-555-5555" title="Give me a call">(714) 276-7958</a></span></i></li>
+
+                        <li className="list-item"><i className="fa fa-envelope fa-2x"><span
+                            className="contact-text gmail"><a href="mailto:#"
+                                                              title="Send me an email">bnegash16@outlook.com</a></span></i>
+                        </li>
+
+                    </ul>
+
+                    <hr />
+                        <ul className="social-media-list">
+                            <li><a href="#" target="_blank" className="contact-icon">
+                                <i className="fa fa-github" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="#" target="_blank" className="contact-icon">
+                                <i className="fa fa-codepen" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="#" target="_blank" className="contact-icon">
+                                <i className="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="#" target="_blank" className="contact-icon">
+                                <i className="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                        <hr />
+
+                            <div className="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
                 </div>
-                <div className="contact-group">
-                    <label htmlFor="email" className="contact-label">
-                        Email
-                    </label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="contact-input"
-                        required
-                    />
-                </div>
-                <div className="contact-group">
-                    <label htmlFor="message" className="contact-label">
-                        Message
-                    </label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        className="contact-input"
-                        required
-                    ></textarea>
-                </div>
-                <button type="submit" className="contact-button">
-                    Send
-                </button>
-            </form>
-        </div>
-    );
+            </div>
+        </section>
+);
 }
 
 export default Contact;

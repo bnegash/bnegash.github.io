@@ -18,55 +18,70 @@ const Project = () => {
         project;
 
     return (
-        <div className="container">
-            <section className="main">
-                <h1>I'm a creative web developer, who specializes in building beautiful websites</h1>
-            </section>
+        <div className="project">
+            <div className="project-container">
+                <div className="project-image-container">
+                    <img
+                        src={require(`../assets/images/${bannerImage}`)}
+                        alt={title}
+                        className="project-image"
+                    />
+                </div>
+                <h1 className="project-title">{title}</h1>
+                <div className="project-details-container">
+                    <div className="left-column">
+                        <p className="project-description">{description}</p>
+                    </div>
+                    <div className="right-column">
+                        <p className="project-date">{date}</p>
 
-            <section className="gallery">
-                <ul>
-                    <li className="item">
-                        <div className="info">
-                            <a href="#" title="Project Title">
-                                <img src={itLogo} alt="covInternship"/>
-                            </a>
-                            <h3>IT - Internship</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
+                        <div className="project-links">
+                            <h3>Relevant Links</h3>
+                            {links.map((link) => (
+                                <a
+                                    key={link.url}
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="project-link"
+                                >
+                                    {link.name}
+                                </a>
+                            ))}
                         </div>
-                    </li>
-                    <li className="item">
-                        <div className="info">
-                            <a href="#" title="Project Title">
-                                <img src="https://source.unsplash.com/RPzWI0rolS8" alt="bridge"/>
-                            </a>
-                            <h3>Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
+                        <div className="project-skills">
+                            <h3>Skills Used</h3>
+                            <ul>
+                                {project?.skills.map((skill, index) => (
+                                    <li key={index}>{skill}</li>
+                                ))}
+                            </ul>
                         </div>
-                    </li>
-                    <li className="item">
-                        <div className="info">
-                            <a href="#" title="Project Title">
-                                <img src="https://source.unsplash.com/i1S4n4yQUKM" alt="bridge"/>
-                            </a>
-                            <h3>Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                {additionalImages && additionalImages.length > 0 && (
+                    <div>
+                        <h3 className="project-gallery-header">Additional Images:</h3>
+                        <div className="project-gallery">
+                            {additionalImages.map((image) => (
+                                <div className="project-gallery-item">
+                                    <a
+                                        href={require(`../assets/images/${image}`)}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src={require(`../assets/images/${image}`)}
+                                            alt={title}
+                                            className="project-gallery-image"
+                                        />
+                                    </a>
+                                </div>
+                            ))}
                         </div>
-                    </li>
-                    <li className="item">
-                        <div className="info">
-                            <a href="#" title="Project Title">
-                                <img src="https://source.unsplash.com/QgHvLSuIcLs"alt="bridge"/>
-                            </a>
-                            <h3>Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
+                    </div>
+                )}
+            </div>
         </div>
     );
 };

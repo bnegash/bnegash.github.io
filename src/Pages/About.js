@@ -4,7 +4,7 @@ import blogs from "../data/blogs.json";
 import "./About.css";
 const About = () => {
     return (
-        <div className="container">
+        <div className="about-container">
             <h1 className="about-title">About Me</h1>
             <div className="about-content">
                 <img src={profilePic} alt="Profile" className="about-profile" />

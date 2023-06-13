@@ -1,105 +1,46 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Portfolio.css";
-import itLogo from "../assets/images/IT-Logo.jpg";
+import projectsData from "../data/projects.json";
+import { Tilt } from "react-tilt";
+
+const defaultOptions = {
+    reverse: false, // reverse the tilt direction
+    max: 35, // max tilt rotation (degrees)
+    perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
+    scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
+    speed: 1000, // Speed of the enter/exit transition
+    transition: true, // Set a transition on enter/exit.
+    axis: null, // What axis should be disabled. Can be X or Y.
+    reset: true, // If the tilt effect has to be reset on exit.
+    easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+};
 
 function Portfolio() {
-    const imgContent = document.querySelectorAll('.img-content-hover');
-
-    function showImgContent(e) {
-        for(var i = 0; i < imgContent.length; i++) {
-            let x = e.pageX;
-            let y = e.pageY;
-            imgContent[i].style.transform = `translate3d(${x}px, ${y}px, 0)`;
-        }
-    };
-
-    document.addEventListener('mousemove', showImgContent);
-    return (
-        <div className="wrapper">
-            <section className="gallery">
-                <div className="container">
-                    <div className="grid">
-                        <div className="column-xs-12 column-md-4">
-                            <figure className="img-container">
-                                <img src="https://source.unsplash.com/8b1cWDyvT7Y"/>
-                                <figcaption className="img-content">
-                                    <h2 className="title">Smart Watch</h2>
-                                    <h3 className="category">Showcase</h3>
-                                </figcaption>
-                                <span className="img-content-hover">
-            <h2 className="title">Smart Watch</h2>
-            <h3 className="category">Showcase</h3>
-          </span>
-                            </figure>
-                        </div>
-                        <div className="column-xs-12 column-md-4">
-                            <figure className="img-container">
-                                <img src="https://source.unsplash.com/5VXH4RG88gc"/>
-                                <figcaption className="img-content">
-                                    <h2 className="title">Camera Film</h2>
-                                    <h3 className="category">Showcase</h3>
-                                </figcaption>
-                                <span className="img-content-hover">
-            <h2 className="title">Camera Film</h2>
-            <h3 className="category">Showcase</h3>
-          </span>
-                            </figure>
-                        </div>
-                        <div className="column-xs-12 column-md-4">
-                            <figure className="img-container">
-                                <img src="https://source.unsplash.com/XtUd5SiX464"/>
-                                <figcaption className="img-content">
-                                    <h2 className="title">Coffee</h2>
-                                    <h3 className="category">Showcase</h3>
-                                </figcaption>
-                                <span className="img-content-hover">
-            <h2 className="title">Coffee</h2>
-            <h3 className="category">Showcase</h3>
-          </span>
-                            </figure>
-                        </div>
-                        <div className="column-xs-12 column-md-6">
-                            <figure className="img-container">
-                                <img src="https://source.unsplash.com/JYGnB9gTCls"/>
-                                <figcaption className="img-content">
-                                    <h2 className="title">Phone</h2>
-                                    <h3 className="category">Showcase</h3>
-                                </figcaption>
-                                <span className="img-content-hover">
-            <h2 className="title">Phone</h2>
-            <h3 className="category">Showcase</h3>
-          </span>
-                            </figure>
-                        </div>
-                        <div className="column-xs-12 column-md-6">
-                            <figure className="img-container">
-                                <img src="https://source.unsplash.com/-RBuQ2PK_L8"/>
-                                <figcaption className="img-content">
-                                    <h2 className="title">Keyboard</h2>
-                                    <h3 className="category">Showcase</h3>
-                                </figcaption>
-                                <span className="img-content-hover">
-            <h2 className="title">Keyboard</h2>
-            <h3 className="category">Showcase</h3>
-          </span>
-                            </figure>
-                        </div>
-                        <div className="column-xs-12">
-                            <figure className="img-container">
-                                <img src="https://source.unsplash.com/P44RIGl9V54"/>
-                                <figcaption className="img-content">
-                                    <h2 className="title">Wrist Watch</h2>
-                                    <h3 className="category">Showcase</h3>
-                                </figcaption>
-                                <span className="img-content-hover">
-            <h2 className="title">Wrist Watch</h2>
-            <h3 className="category">Showcase</h3>
-          </span>
-                            </figure>
-                        </div>
-                    </div>
+    const projects = projectsData.map((project) => (
+        <Tilt options={defaultOptions}>
+            <Link
+                to={`/project/${project.id}`}
+                key={project.id}
+                className="portfolio-card"
+            >
+                <div
+                    className="portfolio-card-image"
+                    style={{
+                        backgroundImage: `url(${require(`../assets/images/${project.bannerImage}`)})`,
+                    }}
+                ></div>
+                <div className="portfolio-card-content">
+                    <h2 className="portfolio-card-title">{project.title}</h2>
                 </div>
-            </section>
+            </Link>
+        </Tilt>
+    ));
+
+    return (
+        <div className="portfolio-container">
+            <h1 className="portfolio-title">Selected Projects</h1>
+            <div className="portfolio-grid">{projects}</div>
         </div>
     );
 }
