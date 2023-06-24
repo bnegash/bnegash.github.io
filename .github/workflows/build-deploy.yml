@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Github Pages
 
 on:
   push:
@@ -6,8 +6,10 @@ on:
       - Bruck
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-22.10
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout Repository
