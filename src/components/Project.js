@@ -22,7 +22,7 @@ const Project = () => {
             <div className="project-container">
                 <div className="project-image-container">
                     <img
-                        src={require(`../assets/images/${bannerImage}`)}
+                        src={require(`../images/${bannerImage}`)}
                         alt={title}
                         className="project-image"
                     />
@@ -66,12 +66,12 @@ const Project = () => {
                             {additionalImages.map((image) => (
                                 <div className="project-gallery-item">
                                     <a
-                                        href={require(`../assets/images/${image}`)}
+                                        href={require(`../images/${image}`)}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
                                         <img
-                                            src={require(`../assets/images/${image}`)}
+                                            src={require(`../images/${image}`)}
                                             alt={title}
                                             className="project-gallery-image"
                                         />
