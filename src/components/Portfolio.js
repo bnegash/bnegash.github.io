@@ -27,7 +27,7 @@ function Portfolio() {
                 <div
                     className="portfolio-card-image"
                     style={{
-                        backgroundImage: `url(${require(`../images/${project.bannerImage}`)})`,
+                        backgroundImage: `url(${require(`../assets/images/${project.bannerImage}`)})`,
                     }}
                 ></div>
                 <div className="portfolio-card-content">
