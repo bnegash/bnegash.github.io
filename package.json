@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://www.brucknegash.com",
+  "homepage": "http://www.brucknegash.com",
   "dependencies": {
     "@react-buddy/ide-toolbox": "^2.3.1",
     "jquery": "^3.7.0",
