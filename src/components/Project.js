@@ -3,6 +3,9 @@ import { useParams } from "react-router-dom";
 import projects from "../data/projects.json";
 import "../styles/Project.css";
 
+import apiLogo from '../images/API-Logo.png';
+import itLogo from '../images/IT-Logo.jpg';
+
 const Project = () => {
     const { projectId } = useParams();
     const project = projects.find((p) => p.id === projectId);
@@ -19,7 +22,7 @@ const Project = () => {
             <div className="project-container">
                 <div className="project-image-container">
                     <img
-                        src={require(`../images/${bannerImage}`)}
+                        src={require(`../assets/images/${bannerImage}`)}
                         alt={title}
                         className="project-image"
                     />
@@ -63,12 +66,12 @@ const Project = () => {
                             {additionalImages.map((image) => (
                                 <div className="project-gallery-item">
                                     <a
-                                        href={require(`../images/${image}`)}
+                                        href={require(`../assets/images/${image}`)}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
                                         <img
-                                            src={require(`../images/${image}`)}
+                                            src={require(`../assets/images/${image}`)}
                                             alt={title}
                                             className="project-gallery-image"
                                         />
