@@ -15,9 +15,6 @@ const ComponentPreviews = () => {
             <ComponentPreview path="/App">
                 <App/>
             </ComponentPreview>
-            <ComponentPreview path="/Landing">
-                <Landing/>
-            </ComponentPreview>
             <ComponentPreview path="/Portfolio">
                 <Portfolio/>
             </ComponentPreview>
