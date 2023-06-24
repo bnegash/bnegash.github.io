@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "../assets/images/profile-pic.jpg";
+import profilePic from "../images/profile-pic.jpg";
 import blogs from "../data/blogs.json";
 import "../styles/About.css";
 const About = () => {
