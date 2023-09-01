@@ -1,61 +1,67 @@
-import React,{useEffect} from "react";
+import React, {useState} from "react";
 import "../styles/Contact.css";
 
 function Contact() {
-    useEffect(() => {
-        const handleSubmit = (e) => {
-            e.preventDefault();
-            e.target.elements.name.value = "";
-            e.target.elements.email.value = "";
-            e.target.elements.message.value = "";
-        };
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
 
-        const contactForm = document.querySelector("#contact-form");
-        if (contactForm) {
-            contactForm.addEventListener("submit", handleSubmit);
-        }
+    const handleInputChange = (e) => {
+        const {name, value} = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        e.target.elements.name.value = "";
+        e.target.elements.email.value = "";
+        e.target.elements.message.value = "";
 
-        return () => {
-            // Clean up the event listener when the component is unmounted
-            if (contactForm) {
-                contactForm.removeEventListener("submit", handleSubmit);
-            }
-        };
-    }, []);
+        // Clear form fields by updating the state
+        setFormData({
+            name: "",
+            email: "",
+            message: "",
+        });
+    };
 
     return (
-        <section id="contact">
-
-            <h1 className="section-header">Contact</h1>
-
+        <section id="contact" className="container">
+            <div className="contact-title">
+                <h3 className="text-center"><span></span>CONTACT<span></span></h3>
+            </div>
             <div className="contact-wrapper">
 
-                <form id="contact-form" className="form-horizontal" role="form">
+                <form id="contact-form" className="form-horizontal" role="form" onSubmit={handleSubmit}>
 
                     <div className="form-group">
                         <div className="col-sm-12">
                             <input type="text" className="form-control" id="name" placeholder="NAME" name="name"
-                                   value="" required/>
+                                   value={formData.name} onChange={handleInputChange} required/>
                         </div>
                     </div>
 
                     <div className="form-group">
                         <div className="col-sm-12">
                             <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email"
-                                   value="" required/>
+                                   value={formData.email} onChange={handleInputChange}/>
                         </div>
                     </div>
 
                     <textarea className="form-control" rows="10" placeholder="MESSAGE" name="message"
-                              required></textarea>
+                              value={formData.message} onChange={handleInputChange} required>
+
+                    </textarea>
 
                     <button className="btn btn-primary send-button" id="submit" type="submit" value="SEND">
                         <div className="alt-send-button">
                             <i className="fa fa-paper-plane"></i><span className="send-text">SEND</span>
                         </div>
-
                     </button>
-
                 </form>
 
                 <div className="direct-contact-container">
@@ -74,29 +80,29 @@ function Contact() {
 
                     </ul>
 
-                    <hr />
-                        <ul className="social-media-list">
-                            <li><a href="#" target="_blank" className="contact-icon">
-                                <i className="fa fa-github" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank" className="contact-icon">
-                                <i className="fa fa-codepen" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank" className="contact-icon">
-                                <i className="fa fa-twitter" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank" className="contact-icon">
-                                <i className="fa fa-instagram" aria-hidden="true"></i></a>
-                            </li>
-                        </ul>
-                        <hr />
+                    <hr/>
+                    <ul className="social-media-list">
+                        <li><a href="#" target="_blank" className="contact-icon">
+                            <i className="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" className="contact-icon">
+                            <i className="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" className="contact-icon">
+                            <i className="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" className="contact-icon">
+                            <i className="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <hr/>
 
-                            <div className="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+                    <div className="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
 
                 </div>
             </div>
         </section>
-);
+    );
 }
 
 export default Contact;
