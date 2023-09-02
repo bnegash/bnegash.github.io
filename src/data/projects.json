@@ -8,11 +8,11 @@
     ],
     "links": [
       {
-        "name": "Onshape Webiste",
-        "url": "https://www.onshape.com/en/"
+        "name": "City of Vernon Website",
+        "url": "https://www.cityofvernon.org/"
       }
     ],
-    "date": "Summer 2016",
+    "date": "March 2023 - Present",
     "skills": [
       "Angular.js",
       "Javascript",
@@ -22,8 +22,8 @@
     ]
   },
   {
-    "id": "kojo-oa-scanning",
-    "title": "Kojo Document Scanning",
+    "id": "arl",
+    "title": "Army Research Lab",
     "description": "When one of our customers, the subcontractor buying materials, sends an order to a vendor, the vendor sends back a document called an Order Acknowledgement (OA), which basically confirms the order and locks in the pricing of the individual line items. These documents are usually PDFs. Previously, in Kojo, when the vendor send back this OA document, the Kojo user had to manually enter the pricing from the PDF into the Kojo system to then sync either their accounting software. This was a manual and time consuming process, especially for long orders that can have many line items.\n\n Our new feature used OCR technology using a Microsoft Azure Machine Learning model and API to read the PDF and automatically pull out the pricing of the line items to enter them directly into Kojo, saving the Kojo user the manual effort. This saves them tons of time and also is less prone to typos and misclicks. It also keeps the information up to date. \n\n I was the Team Lead of the team working on this project, so I was responsible for overseeing the project, writing much of the code, and reviewing all of the code written by other engineers. I helped with the user research on this project, working with my designer and product manager (PM) to conduct interviews, learn about the problem space, and define requirements. \n\n There were several challenges in this project. First, we needed to decide which technology to do the document scanning. We had to evaluate different solutions, ultimately deciding between two, Infrrd and Azure. It was difficult because they send back data in different ways, had different wait times, and one used a callback url while the other was just a synchronous request. We chose Azure because it was easier to use from a developer perspective and was far cheaper.\n\n Another big challenge was dealing with scans that didn't return data with 100% accuracy. PDFs from our vendors come in all different sizes, layouts, and qualities. When Azure's ML model returns results, it doesn't always match up with the original order, because it can't have 100% accuracy. Sometimes line item information was split up between multiple lines. Our solution was a clever algorithm that would check the total number of line items vs the line items on the order, and the number of cells that were empty vs filled, and intelligently combine rows so the data would be accurate. \n\n We had another challenge with different Units of Measure. Normally, for most items, the 'Extended Price' is a simple calculation of 'Unit Price x Quantity'. However, some items we noticed had an extended price that was less than the unit price, which didn't make sense, and was causing errors with accounting systems we integrate with. We solved the challenge by updating our algorithms to also take the 'Units of Measure' column into account, which could be 'Each', but sometimes would be 'C' or 'M', which meant the unit prices for 'C' would be a in a set of 100, or 1000 for M. We updated our code to calculate the Unit Price ourselves, rather than rely on the Unit Price that Azure's ML model scanned, to maintain correct calculations.",
     "bannerImage": "Web-Development.jpg",
     "additionalImages": [
@@ -34,10 +34,10 @@
         "url": "https://intercom.help/use-kojo/en/articles/6565012-intelligent-order-acknowledgments"
       }
     ],
-    "date": "Fall 2022",
+    "date": "Fall 2022 - Spring 2023",
     "skills": [
-      "React",
-      "Javascript",
+      "Python",
+      "Pandas",
       "Typescript",
       "GraphQL",
       "Postgres",
@@ -47,7 +47,7 @@
     ]
   },
   {
-    "id": "kojo-rebranding",
+    "id": "api",
     "title": "Kojo Rebranding",
     "description": "Kojo was originally called Agora Systems. However, due to overlap with another company called 'Agora', in April of 2022 we embarked on a rebrand to modernize our brand and stand out. We had less than 6 weeks to finish the project due to a cease and desist order from the other 'Agora.' So not only was this rebrand saving ourselves from a brand lawsuit battle, it also set us up for success to be a new modern brand that stuck out. This included changing much of the design of the whole mobile application. This meant new colors, new icons, new loading screens, new fonts, tutorials, new copy, as well as updating our app store listings in both the Apple App Store and Google Play Store. \n\n We also had to change much of our email and server infrastructure, as we sent emails from kojo.app instead of agora.systems. \n\n We also had to ensure our existing customers updated that app, which included email campaigns letting them know of the changes and showing links to update.\n\n This also included rigorous testing of the entire application, making sure each screen and component included our new style guidelines, colors, fonts, copy, etc. I led the rebrand on the mobile app, writing most of the rebrand code as well as leading the testing. \n\n I decided early on in the project that I would also modernize and refactor much of our code, in particular how we defined colors. We had much tech debt around our existing color system, so I took it upon myself to rewrite that code and make it dead simple to create colors. \n\n I set up guidelines so that future engineers would find it easy to write new UI and define colors. So rather than defining custom hex codes for the color of some text, like the gray '#ACACA5', the engineer simply wrote 'textGray.' That way each color was defined in the context of its application. So the engineer doesn't actually need to worry about the specific color, but rather can just make the easy color choice like 'appBackground' or 'primarySectionBackground' rather than defining customer colors. This also made our codebase only use about 12 different colors, which before were closer to 30.",
     "bannerImage": "API-Logo.png",
@@ -103,6 +103,28 @@
   {
     "id": "microsoft-internship",
     "title": "Microsoft Internship",
+    "description": "During the summer of 2017, I interned as a Software Engineer Intern at Microsoft in Redmond. I was a part of the SalesIT department, under MSIT. I worked on a personal project, rather than being integrated directly into a team. \n\n I researched, designed, and developed a 'Scrumbot' for Microsoft Teams. I conducted user research observing different current scrum teams and how they operate, especially with members in different locations. With agile methodology becoming a dominant form of software development cycles, holding successful daily standup meetings is important to a team's success.\n\n The bot could run asynchronous standup meetings. When the bot was added to a team in Microsoft Teams, it would ask for a Scrum Master to be set. This person could configure the daily scrum questions (or use the default yesterday, today, and blocker template) as well as the time to ping the team (a 10: 00am scrum). At that specified time, the bot would send an individual message to the members of the scrum team, ask for their daily update, and store their responses. The bot would then post the messages in a designated 'Standup' channel, to increase transparency across the team.\n\nI developed the bot using the Botbuilder SDK in Node.js. I also used Azure Web Service and Azure Table Storage for deployment and persistent storage. ",
+    "bannerImage": "Cloud-Pic.jpg",
+    "additionalImages": [
+    ],
+    "links": [
+      {
+        "name": "Microsoft Website",
+        "url": "https://www.microsoft.com/en-us/"
+      }
+    ],
+    "date": "Summer 2017",
+    "skills": [
+      "Node.js",
+      "Javascript",
+      "Botbuilder SDK",
+      "Azure Web Services",
+      "Azure Table Storage"
+    ]
+  },
+  {
+    "id": "small projects",
+    "title": "Side Projects",
     "description": "During the summer of 2017, I interned as a Software Engineer Intern at Microsoft in Redmond. I was a part of the SalesIT department, under MSIT. I worked on a personal project, rather than being integrated directly into a team. \n\n I researched, designed, and developed a 'Scrumbot' for Microsoft Teams. I conducted user research observing different current scrum teams and how they operate, especially with members in different locations. With agile methodology becoming a dominant form of software development cycles, holding successful daily standup meetings is important to a team's success.\n\n The bot could run asynchronous standup meetings. When the bot was added to a team in Microsoft Teams, it would ask for a Scrum Master to be set. This person could configure the daily scrum questions (or use the default yesterday, today, and blocker template) as well as the time to ping the team (a 10: 00am scrum). At that specified time, the bot would send an individual message to the members of the scrum team, ask for their daily update, and store their responses. The bot would then post the messages in a designated 'Standup' channel, to increase transparency across the team.\n\nI developed the bot using the Botbuilder SDK in Node.js. I also used Azure Web Service and Azure Table Storage for deployment and persistent storage. ",
     "bannerImage": "Cloud-Pic.jpg",
     "additionalImages": [
