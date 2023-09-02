@@ -2,7 +2,7 @@
   {
     "id": "cov-internship",
     "title": "City of Vernon IT Internship",
-    "description": "For the summer of 2016, I interned as a software engineer at Onshape Inc, a browser and cloud based 3D CAD software company. My role was a client-side developer, which meant dealing with the large user-facing codebase, mostly in javascript and using the Angular.js framework. Onshape is an agile company that uses three week development cycles.\n\nWith about 100 full time employees and 170 million raised in venture capital, Onshape was a great opportunity for me to learn from industry leaders in the founding team (also the original founding team of Solidworks).\n\nI worked on the five-person User Interface team, with the same responsibilities as a full-time employee. We worked closely with both the User Experience Designers as well as Quality Assurance Engineers to write and maintain efficient, scalable, and as bug-free code as we could while keeping strong visual communication.\n\nI worked on various large scale projects as well as countless bug fixings. Some projects included working on the onboarding process for new users as they enter the app for the first time that was A/B testable by the admin users. ",
+    "description": "I am currently an IT intern for the City of Vernon. ",
     "bannerImage": "IT-Logo.jpg",
     "additionalImages": [
     ],
@@ -14,8 +14,8 @@
     ],
     "date": "March 2023 - Present",
     "skills": [
-      "Angular.js",
-      "Javascript",
+      "Helpdesk",
+      "Azure",
       "Typescript",
       "CSS",
       "A/B Testing"
