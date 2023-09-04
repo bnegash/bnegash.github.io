@@ -5,7 +5,7 @@ function Home() {
     return (
         <div className="typing-wrapper">
             <div className="typing-demo">
-                hi, i'm bruck.
+                Hi, I'm Bruck.
             </div>
         </div>
     );

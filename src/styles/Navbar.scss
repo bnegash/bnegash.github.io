@@ -70,7 +70,8 @@ a {
   z-index: 10;
   width: 100%;
   height: 70px;
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+  //background: linear-gradient(to bottom, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+  background: #e2dedb;
 }
 
 .nav, .navbar {
@@ -118,6 +119,6 @@ a {
 .active {
   &:after {
     height: 2px !important;
-    background: #e74c3c !important;
+    background: darkslategrey !important;
   }
 }
