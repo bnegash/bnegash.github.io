@@ -48,30 +48,33 @@
   },
   {
     "id": "api",
-    "title": "API Projects",
-    "description": "COMING SOON",
-    "bannerImage": "API-Logo.png",
+    "title": "Weather App",
+    "description": "The Weather App is a web application that provides real-time weather information for locations around the world. It allows users to check the current weather conditions, temperature, and more. The app is built using React.js and utilizes the OpenWeatherMap API to fetch weather data. ",
+    "bannerImage": "WeatherApp.png",
     "additionalImages": [
+      "WeatherApp.png"
     ],
     "links": [
       {
-        "name": "My Blog Post on Rebranding",
+        "name": "NYT Books API",
         "url": "https://medium.com/kojo-engineering/rebranding-to-kojo-4ad8d8660e5d"
       },
       {
-        "name": "Rebranding Press Release",
+        "name": "Weather App",
         "url": "https://www.prnewswire.com/news-releases/construction-procurement-platform-agora-announces-rebrand-to-kojo-expands-into-all-major-trades-301552428.html"
 
       }
     ],
     "date": "April 2022",
     "skills": [
-      "React Native",
-      "CSS",
+      "React",
+      "Node.js",
+      "Express.js",
+      "HTML/CSS",
       "Javascript",
-      "Typescript",
-      "Documentation",
-      "Styled Components"
+      "OpenWeatherMap API",
+      "NYT Books API",
+      "MongoDB"
     ]
   },
   {
@@ -124,10 +127,11 @@
   },
   {
     "id": "small projects",
-    "title": "Side Projects",
-    "description": "COMING SOON",
-    "bannerImage": "Cloud-Pic.jpg",
+    "title": "Temperature Converter",
+    "description": "Temperature Converter: This is a web application that allows users to convert temperatures between Celsius, Fahrenheit, and Kelvin. ",
+    "bannerImage": "TempConvert.png",
     "additionalImages": [
+      "TempConvert.png"
     ],
     "links": [
       {
@@ -135,13 +139,13 @@
         "url": "https://www.microsoft.com/en-us/"
       }
     ],
-    "date": "Summer 2017",
+    "date": "Summer 2023",
     "skills": [
       "Node.js",
       "Javascript",
-      "Botbuilder SDK",
-      "Azure Web Services",
-      "Azure Table Storage"
+      "BootStrap",
+      "HTML/CSS",
+      "JQuery"
     ]
   }
 ]
