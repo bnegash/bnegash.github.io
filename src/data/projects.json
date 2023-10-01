@@ -24,7 +24,7 @@
   {
     "id": "arl",
     "title": "Army Research Lab",
-    "description": "COMING SOON",
+    "description": "The purpose of SUDO is to be able to employ an algorithm that can calculate distances in which  a SUAS could be perceived by human targets on the drone, given parameters of auditory and visual footprints of a SUAS, as well as background and environmental auditory and visual data given to us by the Army Research Lab. This data will then be relayed to the 3D environment portion of our software, which can render a 3D perspective of detection zones and probabilities of detection within those zones.",
     "bannerImage": "Web-Development.jpg",
     "additionalImages": [
     ],
@@ -36,14 +36,10 @@
     ],
     "date": "Fall 2022 - Spring 2023",
     "skills": [
+      "Unity",
+      "ODM (Open Drone Mapping)",
       "Python",
-      "Pandas",
-      "Typescript",
-      "GraphQL",
-      "Postgres",
-      "CSS",
-      "Azure",
-      "OCR"
+      "GraphQL"
     ]
   },
   {
