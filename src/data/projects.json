@@ -44,11 +44,10 @@
   },
   {
     "id": "api",
-    "title": "New York Times Web App",
-    "description": " ",
-    "bannerImage": "WeatherApp.png",
+    "title": "New York Times Books API",
+    "description": "COMING SOON",
+    "bannerImage": "API.png",
     "additionalImages": [
-      "WeatherApp.png"
     ],
     "links": [
       {
@@ -56,14 +55,13 @@
         "url": "https://github.com/bnegash/CS-4220/tree/main/Final%20Project"
       },
     ],
-    "date": "April 2022",
+    "date": "April 2023",
     "skills": [
       "React",
       "Node.js",
       "Express.js",
       "HTML/CSS",
       "Javascript",
-      "OpenWeatherMap API",
       "NYT Books API",
       "MongoDB",
       "Postman"
@@ -141,8 +139,7 @@
       "Node.js",
       "Javascript",
       "BootStrap",
-      "HTML/CSS",
-      "JQuery"
+      "HTML/CSS"
     ]
   }
 ]
