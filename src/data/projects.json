@@ -128,7 +128,7 @@
     "id": "small projects",
     "title": "Small Projects",
     "description": "Temperature Converter: This is a web application that allows users to convert temperatures between Celsius, Fahrenheit, and Kelvin.\n\n Weather App: The Weather App is a web application that provides real-time weather information for locations around the world. It allows users to check the current weather conditions, temperature, and more. The app is built using React.js and utilizes the OpenWeatherMap API to fetch weather data. ",
-    "bannerImage": "TempConvert.png",
+    "bannerImage": "Cloud-Pic.jpg",
     "additionalImages": [
       "TempConvert.png",
       "WeatherApp.png"
