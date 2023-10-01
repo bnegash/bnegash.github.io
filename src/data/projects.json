@@ -15,10 +15,7 @@
     "date": "March 2023 - Present",
     "skills": [
       "Helpdesk",
-      "Azure",
-      "Typescript",
-      "CSS",
-      "A/B Testing"
+      "Azure"
     ]
   },
   {
@@ -47,7 +44,7 @@
   },
   {
     "id": "api",
-    "title": "Weather App",
+    "title": "New York Times Web App",
     "description": " ",
     "bannerImage": "WeatherApp.png",
     "additionalImages": [
@@ -56,13 +53,8 @@
     "links": [
       {
         "name": "NYT Books API",
-        "url": "https://medium.com/kojo-engineering/rebranding-to-kojo-4ad8d8660e5d"
+        "url": "https://github.com/bnegash/CS-4220/tree/main/Final%20Project"
       },
-      {
-        "name": "Weather App",
-        "url": "https://www.prnewswire.com/news-releases/construction-procurement-platform-agora-announces-rebrand-to-kojo-expands-into-all-major-trades-301552428.html"
-
-      }
     ],
     "date": "April 2022",
     "skills": [
@@ -73,7 +65,8 @@
       "Javascript",
       "OpenWeatherMap API",
       "NYT Books API",
-      "MongoDB"
+      "MongoDB",
+      "Postman"
     ]
   },
   {
