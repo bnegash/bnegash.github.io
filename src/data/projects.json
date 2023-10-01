@@ -30,16 +30,17 @@
     ],
     "links": [
       {
-        "name": "Kojo article explanation",
-        "url": "https://intercom.help/use-kojo/en/articles/6565012-intelligent-order-acknowledgments"
+        "name": "SUDO Requirements",
+        "url": "https://docs.google.com/document/d/1aMm3ZfyBqYN2fW17lUoh9KHRDqHgiZVC/edit",
+        "name": "SUDO Design Document",
+        "url": "https://docs.google.com/document/d/1aMm3ZfyBqYN2fW17lUoh9KHRDqHgiZVC/edit"
       }
     ],
     "date": "Fall 2022 - Spring 2023",
     "skills": [
       "Unity",
       "ODM (Open Drone Mapping)",
-      "Python",
-      "GraphQL"
+      "Python"
     ]
   },
   {
