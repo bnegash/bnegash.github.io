@@ -31,7 +31,9 @@
     "links": [
       {
         "name": "SUDO Requirements",
-        "url": "https://docs.google.com/document/d/1aMm3ZfyBqYN2fW17lUoh9KHRDqHgiZVC/edit",
+        "url": "https://docs.google.com/document/d/1aMm3ZfyBqYN2fW17lUoh9KHRDqHgiZVC/edit"
+      },
+      {
         "name": "SUDO Design Document",
         "url": "https://docs.google.com/document/d/1aMm3ZfyBqYN2fW17lUoh9KHRDqHgiZVC/edit"
       }
@@ -46,7 +48,7 @@
   {
     "id": "api",
     "title": "Weather App",
-    "description": "The Weather App is a web application that provides real-time weather information for locations around the world. It allows users to check the current weather conditions, temperature, and more. The app is built using React.js and utilizes the OpenWeatherMap API to fetch weather data. ",
+    "description": " ",
     "bannerImage": "WeatherApp.png",
     "additionalImages": [
       "WeatherApp.png"
@@ -124,16 +126,21 @@
   },
   {
     "id": "small projects",
-    "title": "Temperature Converter",
-    "description": "Temperature Converter: This is a web application that allows users to convert temperatures between Celsius, Fahrenheit, and Kelvin. ",
+    "title": "Small Projects",
+    "description": "Temperature Converter: This is a web application that allows users to convert temperatures between Celsius, Fahrenheit, and Kelvin.\n\n Weather App: The Weather App is a web application that provides real-time weather information for locations around the world. It allows users to check the current weather conditions, temperature, and more. The app is built using React.js and utilizes the OpenWeatherMap API to fetch weather data. ",
     "bannerImage": "TempConvert.png",
     "additionalImages": [
-      "TempConvert.png"
+      "TempConvert.png",
+      "WeatherApp.png"
     ],
     "links": [
       {
-        "name": "Side Projects",
-        "url": "https://www.microsoft.com/en-us/"
+        "name": "Temperature Converter Github",
+        "url": "https://github.com/bnegash/TemperatureConverter"
+      },
+      {
+        "name": "Weather App Github",
+        "url": "https://www.prnewswire.com/news-releases/construction-procurement-platform-agora-announces-rebrand-to-kojo-expands-into-all-major-trades-301552428.html"
       }
     ],
     "date": "Summer 2023",
