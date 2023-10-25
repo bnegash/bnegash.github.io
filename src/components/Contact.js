@@ -52,7 +52,7 @@ function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                 ></textarea>
-                <input id="submit" type="submit" value="GO!" />
+                <input id="submit" type="submit" value="Submit!" />
             </form>
             <SocialBtns />
         </div>
