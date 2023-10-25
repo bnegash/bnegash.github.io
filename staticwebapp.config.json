@@ -30,6 +30,5 @@
       "serve": "/assets/:splat",
       "statusCode": 200
     }
-    // Add more routes as needed
   ]
 }
