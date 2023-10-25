@@ -26,6 +26,7 @@ function Contact() {
     return (
         <div className="contact-form-container">
             <header>CONTACT</header>
+        <title>Contact </title>
             <form id="form" className="topBefore" onSubmit={handleSubmit}>
                 <input
                     id="name"
