@@ -23,11 +23,12 @@ function Contact() {
         console.log(formData);
     };
 
+    // Use useEffect to set the title when the component mounts
+    useEffect(() => {
+        document.title = 'Contact';
+    }, []);
+
     return (
-        <HTML>
-        <HEAD>
-        <TITLE>Contact</TITLE>
-        </HEAD>
         <div className="contact-form-container">
             <header>CONTACT</header>
             <form id="form" className="topBefore" onSubmit={handleSubmit}>
