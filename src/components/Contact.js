@@ -24,9 +24,12 @@ function Contact() {
     };
 
     return (
+        <HTML>
+        <HEAD>
+        <TITLE>Contact</TITLE>
+        </HEAD>
         <div className="contact-form-container">
             <header>CONTACT</header>
-        <title>Contact </title>
             <form id="form" className="topBefore" onSubmit={handleSubmit}>
                 <input
                     id="name"
