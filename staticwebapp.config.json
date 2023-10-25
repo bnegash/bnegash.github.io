@@ -1,0 +1,35 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/about",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/portfolio",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/contact",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/project/:projectId",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/assets/*",
+      "serve": "/assets/:splat",
+      "statusCode": 200
+    }
+    // Add more routes as needed
+  ]
+}
