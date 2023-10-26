@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Card } from "react-bootstrap"; // Import the Card component
 import profilePic from "../images/profile-pic.jpg"; // Import your profile picture
 import "../styles/About.css"; // Import your custom CSS for the card
 
 const AboutCard = () => {
+    // Use useEffect to set the title when the component mounts
+    useEffect(() => {
+        document.title = 'ABOUT ME';
+    }, []);
     return (
         <Card className="about-card">
             <Card.Body>

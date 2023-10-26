@@ -19,13 +19,13 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission here, e.g., send data to a server
+        // Handle form submission here,
         console.log(formData);
     };
 
     // Use useEffect to set the title when the component mounts
     useEffect(() => {
-        document.title = 'Contact';
+        document.title = 'CONTACT';
     }, []);
 
     return (
@@ -50,14 +50,13 @@ function Contact() {
                 />
                 <textarea
                     id="message"
-                    type="text"
                     placeholder="MESSAGE"
                     name="message"
                     rows="4"
                     value={formData.message}
                     onChange={handleChange}
                 ></textarea>
-                <input id="submit" type="submit" value="Submit!" />
+                <input id="submit" type="submit" value="SUBMIT" />
             </form>
             <SocialBtns />
         </div>

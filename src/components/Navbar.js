@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import $ from 'jquery';
 import '../styles/Navbar.scss';
 
@@ -89,7 +89,7 @@ function Navbar() {
                 <li className="nav-item active"><Link to="/">HOME</Link></li>
                 <li className="nav-item"><Link to="/about">ABOUT</Link></li>
                 <li className="nav-item"><Link to="/portfolio">PORTFOLIO</Link></li>
-                <li className="nav-item"><Link to="/contact">FIX</Link></li>
+                <li className="nav-item"><NavLink to="/contact">CONTACT</NavLink></li>
             </ul>
         </nav>
     );

@@ -28,7 +28,7 @@ function App() {
 
 export default App;
 */
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Route, Routes } from 'react-router-dom';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -39,6 +39,10 @@ import Home from './components/Home';
 import './App.css';
 
 function App() {
+    // Use useEffect to set the title when the component mounts
+    useEffect(() => {
+        document.title = '';
+    }, []);
     return (
         <>
             <Navbar />

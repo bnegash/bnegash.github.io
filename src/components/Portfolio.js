@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import "../styles/Portfolio.css";
 import projectsData from "../data/projects.json";
@@ -36,6 +36,11 @@ function Portfolio() {
             </Link>
         </Tilt>
     ));
+
+    // Use useEffect to set the title when the component mounts
+    useEffect(() => {
+        document.title = 'PORTFOLIO';
+    }, []);
 
     return (
         <div className="portfolio-container">
