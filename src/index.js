@@ -6,15 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import {DevSupport} from "@react-buddy/ide-toolbox";
 import {ComponentPreviews, useInitial} from "./dev";
+import{BrowserRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <DevSupport ComponentPreviews={ComponentPreviews}
-                    useInitialHook={useInitial}
-        >
+        {/*<DevSupport ComponentPreviews={ComponentPreviews}*/}
+        {/*            useInitialHook={useInitial}>*/}
+        {/*    <App />*/}
+        {/*</DevSupport>*/}
+        <BrowserRouter>
             <App />
-        </DevSupport>
+        </BrowserRouter>
     </React.StrictMode>
 );
 

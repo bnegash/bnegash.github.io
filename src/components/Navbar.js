@@ -89,7 +89,7 @@ function Navbar() {
                 <li className="nav-item active"><Link to="/">HOME</Link></li>
                 <li className="nav-item"><Link to="/about">ABOUT</Link></li>
                 <li className="nav-item"><Link to="/portfolio">PORTFOLIO</Link></li>
-                <li className="nav-item"><Link to="/contact">CONTACT</Link></li>
+                <li className="nav-item"><Link to="/contact">FIX</Link></li>
             </ul>
         </nav>
     );
