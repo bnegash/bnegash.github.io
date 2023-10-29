@@ -12,6 +12,7 @@
     flex-direction: column;
     max-width: 1200px;
     width: 100%;
+    margin-top: 100px;
 }
 
 .project-image-container {
@@ -61,7 +62,7 @@
 .project-links {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -69,7 +70,8 @@
 .project-links h3 {
     font-size: 1.5rem;
     margin-right: 1rem;
-    //text-align: flex-end;
+
+    /**text-align: flex-end;*/
 }
 
 .project-link {
@@ -82,7 +84,6 @@
     font-size: 1rem;
     margin: 0 1rem 1rem 0;
     padding: 0.5rem 1rem;
-    text-align: center;
     transition: all 0.3s ease-in-out;
     border-radius: 25px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -103,7 +104,7 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .project-skills h3 {

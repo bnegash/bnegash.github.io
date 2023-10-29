@@ -2,20 +2,34 @@
   {
     "id": "cov-internship",
     "title": "City of Vernon IT Internship",
-    "description": "I am currently an IT intern for the City of Vernon. ",
-    "bannerImage": "IT-Logo.jpg",
-    "additionalImages": [
-    ],
+    "description": "During my time as an IT intern for the City of Vernon I worked with a small team of 5 (including myself). Because of the small team dynamic, my team taught me more than just helpdesk.\n\n By the end of my internship I was able to troubleshoot a wide range of hardware or software issues for over 300 employees and on average, resolve 25%-30% of my team's tickets per month.\n\n I worked with established IT procedures to set up, deploy, and if needed troubleshoot, devices such as Windows 11/10/8/7 Desktop PC’s, laptops, tablets, monitors,printers, iOS devices, NVR/DVR's, CCTV's. I became in charge of imaging Desktop's/Laptop's using Windows Deployment Services, setting up and deploying mobile devices using AirWatch, I assisted on major projects where we needed to install multiple workstations which included (and not limited to) Desktops, Laptops, Mitel phones, printers. Often these workstations required network drops, running new cat cables, managed/unmanaged switches, POE injectors, etc.\n\n Prepared detailed work reports of all IT incidents that have been worked on, listing actions performed to supplies used to resolve the issue, all via a service desk ticketing system. On average closing out 40 tasks per week.\n\n I assisted on writing python scripts to better increase both myself and my team's workflow. Scripts that I assisted on are: \n\n Tel_Script: This Python script is a GUI application for updating a telephone directory stored in a Microsoft Access database. Users can input or modify information, including full names, extensions, direct lines, and locations. After entering the data, they can submit the changes. The script provides a confirmation popup upon successful updates. It employs the tkinter library for the graphical user interface and pyodbc for database connectivity. The application streamlines the process of maintaining and updating telephone directory entries with a user-friendly interface. \n\n KillTask: The Kill Task Script is a PowerShell tool that enables users to manage and troubleshoot tasks and processes on remote devices. It provides a user-friendly interface for connecting to a remote device, listing running processes, and terminating specific tasks. Users can choose from a menu of options, including terminating common applications prone to freezing, listing all running processes, or manually entering process names to kill. The script runs in a loop, allowing users to perform multiple actions on the same or different devices. It's a practical tool for remote task management and troubleshooting.",
+    "bannerImage": "VernonImg.jpg",
+    "additionalImages": [],
     "links": [
       {
         "name": "City of Vernon Website",
         "url": "https://www.cityofvernon.org/"
+      },
+      {
+        "name": "Kill Task Script Github",
+        "url": "https://github.com/bnegash/COV_Code/tree/main/KillTask"
+      },
+      {
+        "name": "Tel Script Github",
+        "url": "https://github.com/bnegash/COV_Code/tree/main/Tel_Script"
       }
     ],
-    "date": "March 2023 - Present",
+    "date": "March 2023 - October 2023",
     "skills": [
       "Helpdesk",
-      "Azure"
+      "Zendesk",
+      "Microsoft Office 365",
+      "Sharepoint",
+      "Mobile Device Management (AirWatch)",
+      "Teams",
+      "Zoom",
+      "Asset Management",
+      "Networking"
     ]
   },
   {
@@ -23,8 +37,7 @@
     "title": "Army Research Lab",
     "description": "The purpose of SUDO is to be able to employ an algorithm that can calculate distances in which  a SUAS could be perceived by human targets on the drone, given parameters of auditory and visual footprints of a SUAS, as well as background and environmental auditory and visual data given to us by the Army Research Lab. This data will then be relayed to the 3D environment portion of our software, which can render a 3D perspective of detection zones and probabilities of detection within those zones.",
     "bannerImage": "Web-Development.jpg",
-    "additionalImages": [
-    ],
+    "additionalImages": [],
     "links": [
       {
         "name": "SUDO Requirements",
@@ -43,76 +56,37 @@
     ]
   },
   {
-    "id": "api",
-    "title": "New York Times Books API",
-    "description": "COMING SOON",
-    "bannerImage": "API-Logo.png",
-    "additionalImages": [
-    ],
+    "id": "web-dev",
+    "title": "Website Development",
+    "description": "Below are layouts and templates I've created as well as links to the github repo's with a live demo.\n\n Check out my Github Repository to see some the layouts and templates I've been working on. \n\n You'll see: \n\n 1. Simple Grid Layouts\n\n 2. Sample Landing Pages \n\n 3. Forms \n\n 4. Flexbox Layouts \n\n 5. MORE TO COME SOON!",
+    "bannerImage": "WebDev.jpg",
+    "additionalImages": ["GridLayout.png","TwoColPageImg.png", "Preview_3.png", "Contact Form.png"],
     "links": [
       {
-        "name": "NYT Books API",
-        "url": "https://github.com/bnegash/CS-4220/tree/main/Final%20Project"
+        "name": "Grid Layout",
+        "url": "https://github.com/bnegash/SideProjects/tree/main/Web_Templates/Layouts/Grid%20Layout"
+      },
+      {
+        "name": "Flexbox Cards",
+        "url": "https://github.com/bnegash/SideProjects/tree/main/Web_Templates/Layouts/Cards/Flexbox%20Grid"
+      },
+      {
+        "name": "Contact Form",
+        "url": "https://github.com/bnegash/SideProjects/tree/main/Web_Templates/ContactForm"
+      },
+      {
+        "name": "Website Template Repo",
+        "url": "https://github.com/bnegash/SideProjects/tree/main"
       }
     ],
-    "date": "April 2023",
+    "date": "-",
     "skills": [
       "React",
       "Node.js",
-      "Express.js",
-      "HTML/CSS",
-      "Javascript",
-      "NYT Books API",
-      "MongoDB",
-      "Postman"
-    ]
-  },
-  {
-    "id": "kojo-deliveries-v2",
-    "title": "COMING SOON",
-    "description": "COMING SOON",
-    "bannerImage": "API-Logo.png",
-    "additionalImages": [
-
-    ],
-    "links": [
-      {
-        "name": "Kojo Website",
-        "url": "https://www.usekojo.com/"
-      }
-    ],
-    "date": "Q3 & Q4 2021",
-    "skills": [
-      "React Native",
-      "Node.js",
       "Javascript",
       "Typescript",
-      "GraphQL",
-      "Postgres",
-      "AWS",
-      "S3"
-    ]
-  },
-  {
-    "id": "microsoft-internship",
-    "title": "COMING SOON",
-    "description": "COMING SOON",
-    "bannerImage": "Cloud-Pic.jpg",
-    "additionalImages": [
-    ],
-    "links": [
-      {
-        "name": "Microsoft Website",
-        "url": "https://www.microsoft.com/en-us/"
-      }
-    ],
-    "date": "Summer 2017",
-    "skills": [
-      "Node.js",
-      "Javascript",
-      "Botbuilder SDK",
-      "Azure Web Services",
-      "Azure Table Storage"
+      "HTML/CSS",
+      "PHP"
     ]
   },
   {
@@ -140,6 +114,30 @@
       "Javascript",
       "BootStrap",
       "HTML/CSS"
+    ]
+  },
+  {
+    "id": "api",
+    "title": "New York Times Books API",
+    "description": "COMING SOON",
+    "bannerImage": "API-Logo.png",
+    "additionalImages": [],
+    "links": [
+      {
+        "name": "NYT Books API",
+        "url": "https://github.com/bnegash/CS-4220/tree/main/Final%20Project"
+      }
+    ],
+    "date": "April 2023",
+    "skills": [
+      "React",
+      "Node.js",
+      "Express.js",
+      "HTML/CSS",
+      "Javascript",
+      "NYT Books API",
+      "MongoDB",
+      "Postman"
     ]
   }
 ]

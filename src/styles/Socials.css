@@ -9,11 +9,11 @@
 
 
 .social-wrapper {
-    margin-left: 600px;
-    padding: 0;
+    margin-left: 810px;
     box-sizing: border-box;
     display: inline-flex;
     list-style: none;
+    /*border: 2px solid red;*/
 }
 
 .social-wrapper .icon {

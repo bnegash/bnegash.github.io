@@ -17,7 +17,7 @@ function SocialMediaIcons() {
             <li className="icon linkedin">
                 <span className="tooltip">Linkedin</span>
                 <a
-                    href="www.linkedin.com/in/brucknegash213"
+                    href="https://www.linkedin.com/in/brucknegash213"
                     target="_blank"
                     rel="noopener noreferrer"
                     >

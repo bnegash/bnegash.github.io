@@ -3,9 +3,6 @@ import { useParams } from "react-router-dom";
 import projects from "../data/projects.json";
 import "../styles/Project.css";
 
-import apiLogo from '../images/API-Logo.png';
-import itLogo from '../images/IT-Logo.jpg';
-
 const Project = () => {
     const { projectId } = useParams();
     const project = projects.find((p) => p.id === projectId);
